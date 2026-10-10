@@ -1,0 +1,94 @@
+# Preparation path. Keep its course registration draft until content is ready.
+apiVersion: content.astrona.io/v1alpha1
+kind: TrainingPath
+metadata:
+  id: ATP008
+  slug: kubernetes-and-cloud-native-associate-kcna
+  title: Kubernetes and Cloud Native Associate (KCNA)
+  description: 'Preparation path for KCNA: one training series per curriculum domain. Content authoring
+    is planned.'
+  version: 0.1.0
+  language: en
+  authors:
+  - name: Paris Nakita Kejser
+    email: paris@astrona.io
+    company: Astrona.io
+  tags:
+  - KCNA
+  - Certification Preparation
+  license: Apache-2.0
+spec:
+  audience: Learners preparing for Kubernetes and Cloud Native Associate (KCNA).
+  difficulty: Beginner
+  examPreparation:
+    enabled: true
+    title: Kubernetes and Cloud Native Associate (KCNA)
+    officialSyllabusUrl: https://training.linuxfoundation.org/certification/kubernetes-and-cloud-native-associate-kcna/
+    examId: KCNA
+    provider: CNCF / The Linux Foundation
+  prerequisites:
+  - Basic command-line knowledge and familiarity with the subject of the exam.
+  - A computer capable of running the environments selected during content authoring.
+  learningOutcomes:
+  - Prepare for the Kubernetes Fundamentals domain.
+  - Prepare for the Container Orchestration domain.
+  - Prepare for the Cloud Native Application Delivery domain.
+  - Prepare for the Cloud Native Architecture domain.
+  stages:
+  - id: ATP008-STG001
+    title: Kubernetes Fundamentals
+    description: Prepare for Kubernetes Fundamentals.
+    examDomain: Kubernetes Fundamentals
+    weight: 44
+    learningOutcomes:
+    - Kubernetes Core Concepts
+    - Administration
+    - Scheduling
+    - Containerization
+    content:
+    - ref: ATS037
+      repository: https://github.com/astrona-io/ATS037
+      path: .
+      version: 0.1.0
+  - id: ATP008-STG002
+    title: Container Orchestration
+    description: Prepare for Container Orchestration.
+    examDomain: Container Orchestration
+    weight: 28
+    learningOutcomes:
+    - Networking
+    - Security
+    - Troubleshooting
+    - Storage
+    content:
+    - ref: ATS038
+      repository: https://github.com/astrona-io/ATS038
+      path: .
+      version: 0.1.0
+  - id: ATP008-STG003
+    title: Cloud Native Application Delivery
+    description: Prepare for Cloud Native Application Delivery.
+    examDomain: Cloud Native Application Delivery
+    weight: 16
+    learningOutcomes:
+    - Application Delivery
+    - Debugging
+    content:
+    - ref: ATS039
+      repository: https://github.com/astrona-io/ATS039
+      path: .
+      version: 0.1.0
+  - id: ATP008-STG004
+    title: Cloud Native Architecture
+    description: Prepare for Cloud Native Architecture.
+    examDomain: Cloud Native Architecture
+    weight: 12
+    learningOutcomes:
+    - Observability
+    - Cloud Native Ecosystem and Principles
+    - Cloud Native Community and Collaboration
+    content:
+    - ref: ATS040
+      repository: https://github.com/astrona-io/ATS040
+      path: .
+      version: 0.1.0
